@@ -14,7 +14,7 @@
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <link rel="icon" href="favicon.ico">
-        <title>Timer Agency Template</title>
+        <title>LGC Project | Ty Bingham Portfolio</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
         <meta name="author" content="">
@@ -114,12 +114,12 @@ Global Page Section Start
     <div class="row">
       <div class="col-md-12">
         <div class="block">
-          <h2>Big Headline for Portfolio Project</h2>
+          <h2>Lighten Golf Club Project</h2>
           <div class="portfolio-meta">
-            <span>Dec 11, 2020</span>|
-            <span> Category: typography</span>|
-            <span> website:
-              <a href="http://www.themefisher.com">Themefisher</a>
+            <span>Summer 2024</span>|
+            <span>Data Analytics</span>|
+            <span>
+              <a href="https://www.lightengolfclub.com/">Lighten Golf Club Website</a>
             </span>
           </div>
         </div>
@@ -136,7 +136,7 @@ Global Page Section Start
       <div class="col-lg-12">
         <div class="work-single-image">
           <!-- Work Single Image -->
-          <img class="img-fluid w-100" src="images/portfolio/post-1.jpg" alt="work-single-image">
+          <img class="img-fluid w-75" src="images/portfolio/LGC_Main_Image.png" alt="LGC Bay">
         </div>
       </div>
     </div>
@@ -144,52 +144,56 @@ Global Page Section Start
       <div class="col-lg-8">
         <!-- work single Content -->
         <div class="work-single-content">
-          <h3>Consectur in Bibendum</h3>
-          <p>Totam rem aperiam eaque ipsa quae illo inventore veritatis et quasi architebetea.vitae dicta sunt
-            explicabo.
-            nemo enim ipsam volup as tatem quia voluptassit aspernatur.aut odit aut fugit sed quia consequuntur
-            magni dolores eo ratione voluptatem.sequi nesciunt neque porro quisquam est dolorem ipsum quia dolor
-            amet consectetur adipisci velit. lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation
-            ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim est
-            laborum. Sed ut perspiciatis unde omnis iste natus. error sit voluptatem accusantium doloremque laudantium,
-            totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-            sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-            consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
-            dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
-            incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+          <h3>The Project</h3>
+          <!-- <h5>The Club</h5> -->
+          <p>Lighten Golf Club (LGC) is an indoor golf club located in Riverton, Utah. It features a number of indoor bays 
+            complete with advanced golf tracking software. LGC sells memberships that allow members to access the club for 
+            1-2 hours each day. The owner of the club noticed that certain age groups seemed to use the club more often than
+            others. He wanted to find out, on average, <b>how much each age group used the club</b>, and <b>at what times of day.</b></p>
+
+          <p>To find this out, I took data from two different sources: his scheduling software and his member data. Using various 
+            packages available in Python and R (mainly pandas and dplyr), I <b>cleaned</b> the datasets to make sure all the data was 
+            from actual customers, being careful to root out any test appointments that we didn't want in the final analysis. 
+            I then <b>merged</b> the two datasets so I could identify the name age of the member associated with each bay booking. Some 
+            additional manipulation was then required to format dates, group members into age groups, and aggregating/matching up
+            total number of hours spent each hour of each day per age group, among other things.             
+          </p>
           <!-- Blockquote -->
-          <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore
-            et
-            dolore magna aliqua. ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-            ex ea commodo.</blockquote>
-          <p>Consequuntur magni dolores ratione voluptatem.sequi nesciunt neque porro quisquam est dolorem ipsum quia
-            dolor sit amet consectetur adipisci velit.lorem ipsum dolor sit amet consectetur adipisicing elit
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim veniam quis nostrud
-            exercitation ullamco laboris nisi ut aliquip commodo consequat. </p>
-          <p>Reprehenderit in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat
-            non proident. sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis
-            unde omnis iste natus.</p>
-        </div>
-      </div>
+          <blockquote>If you're interested in the full analysis, you can download the final analysis document <a href="">here</a>.</blockquote>
+          <p>
+            When the data was cleaned, merged, and formatted correctly, I used the ggplot package in R to create <b>simple but 
+            effective visualizations</b>. Figure 1 shows the 
+          </p>
+          <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="300ms">
+            <div class="img-wrapper">
+              <img src="images/portfolio/LGC_Analytics_Avg_Usage_Full_Plot.png" class="img-fluid overlay-image" alt="LGC Avg Usage Full Plot">
+              <div class="overlay">
+                <div class="buttons">
+                  <a rel="gallery" class="fancybox" href="images/portfolio/LGC_Analytics_Avg_Usage_Full_Plot.png">View Fullscreen</a>
+                </div>
+              </div>
+            </div>
+            <figcaption class="mt-2 text-muted">Figure 1: Average usage per age group at LGC.</figcaption>
+          </figure>
+        </div> <!-- Close work-single-content -->
+      </div> <!-- Close col-lg-8 -->
+
       <div class="col-lg-4">
-        <!-- sidebar -->
+        <!-- Sidebar -->
         <div class="work-single-sidebar">
           <h5>Clients</h5>
-          <h6>Julia Robertson</h6>
-          <h5>date</h5>
-          <h6>November 20, 2017</h6>
-          <h5>category</h5>
-          <h6>Investment, Business</h6>
-          <h5>locations</h5>
-          <h6>1201 park street, Avenue, Dhaka</h6>
+          <h6>Lawson Lighten</h6>
+          <h5>Date</h5>
+          <h6>Summer 2024</h6>
+          <h5>Category</h5>
+          <h6>Data Analytics, Business Analytics</h6>
+          <h5>Website</h5>
+          <h6><a href="https://www.lightengolfclub.com/" target="_blank">Lighten Golf Club</a></h6>
         </div>
-      </div>
+      </div> <!-- Close col-lg-4 -->
+    </div> <!-- Close row -->
       <div class="col-lg-12">
-        <a class="btn btn-dafault btn-work hvr-bounce-to-right" href="#">get this work</a>
+        <a class="btn btn-dafault btn-work hvr-bounce-to-right" href="#">download final analysis</a>
       </div>
     </div>
   </div>
